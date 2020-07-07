@@ -1,0 +1,16 @@
+.button {
+  background-color: var(--brightYellow);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px -16px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0;
+  outline: none;
+  padding: 0.938rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  &:hover {
+    background-color: hsl(71, 84%, 45%);
+  }
+}

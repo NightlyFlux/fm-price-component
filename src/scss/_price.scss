@@ -1,0 +1,124 @@
+.price {
+  border-radius: 5px;
+  box-shadow: 0 15px 30px -20px rgba($color: #000000, $alpha: 0.5);
+  display: grid;
+  max-width: 635px;
+  overflow: hidden;
+  &__cta,
+  &__subscription,
+  &__why {
+    padding: 1.625em 1.5em;
+  }
+
+  &__cta {
+    background: white;
+  }
+  &__cta-title {
+    color: var(--cyan);
+    font-size: 1.22em;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+  &__cta-subtitle {
+    color: var(--brightYellow);
+    font-size: 0.91em;
+    line-height: 1.3rem;
+    margin-bottom: 1.1rem;
+    margin-top: 0;
+  }
+  &__cta-body {
+    color: var(--grayishBlue);
+    font-size: 0.85em;
+    line-height: 1.625rem;
+    margin-top: 0;
+    margin-bottom: 0.438em;
+  }
+
+  &__subscription {
+    background: var(--cyan);
+  }
+  &__subscription-title {
+    font-size: 1.14em;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+  }
+  &__subscription-price {
+    font-size: 1.938em;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+    margin-top: 0;
+  }
+  &__subscription-each {
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-left: 0.75rem;
+    opacity: 0.5;
+    vertical-align: middle;
+  }
+  &__subscription-body {
+    font-size: 0.97em;
+    margin-bottom: 1.75rem;
+    opacity: 0.8;
+  }
+
+  &__why {
+    background: var(--lightCyan);
+  }
+  &__why-title {
+    font-size: 1.14em;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+  }
+  &__why-body {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.125rem;
+      }
+      a {
+        color: white;
+        font-size: 0.85em;
+        opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-areas: "cta cta" "subscription why";
+    grid-template-columns: repeat(2, 1fr);
+    &__cta,
+    &__subscription,
+    &__why {
+      padding: 2.5em;
+    }
+
+    &__cta {
+      grid-area: cta;
+    }
+    &__cta-title {
+      font-size: 1.46em;
+      margin-top: 0.438em;
+    }
+    &__cta-subtitle {
+      font-size: 1.1em;
+      margin-bottom: 0.8rem;
+    }
+    &__cta-body {
+      font-size: 0.97em;
+      margin-bottom: 0;
+    }
+
+    &__subscription {
+      grid-area: subscription;
+    }
+
+    &__why {
+      grid-area: why;
+    }
+  }
+}

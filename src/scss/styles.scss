@@ -1,0 +1,29 @@
+@import "_price";
+@import "_button";
+@import "_attribution";
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --lightCyan: hsl(179, 47%, 52%);
+  --lightGrayCyan: hsl(180, 100%, 83%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background: var(--lightGray);
+  color: white;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 2em;
+}
