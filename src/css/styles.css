@@ -159,10 +159,8 @@
 }
 
 .attribution {
-  bottom: 0;
   color: #3e52a3;
   font-size: 11px;
-  position: absolute;
   text-align: center;
   width: 100%;
 }
@@ -187,6 +185,7 @@ html {
 body {
   background: var(--lightGray);
   color: white;
+  position: relative;
 }
 
 .wrapper {
